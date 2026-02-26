@@ -44,7 +44,3 @@ def main(request):
     except Exception as e:
         logging.error("failed to publish message", exc_info=True)
         return {"error": f"failed to publish to pub/sub: {str(e)}"}, 500
-
-
-if __name__ == "__main__":
-    main(1)
